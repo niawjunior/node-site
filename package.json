@@ -18,6 +18,7 @@
   "homepage": "https://github.com/niawjunior/node-site#readme",
   "dependencies": {
     "ejs": "^2.5.9",
+    "ejs-layouts": "0.0.1",
     "express": "^4.16.3",
     "nodemon": "^1.17.3"
   }
