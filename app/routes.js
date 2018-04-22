@@ -6,16 +6,16 @@ var router = express.Router();
 module.exports = router;
 
 router.get('/', function(req, res) {
-  res.render('pages/index');
+  res.render('pages/home');
 });
 
 router.get('/about', function(req, res) {
  res.render('pages/about');
 })
 
-router.get('/contract', function(req, res){
- res.render('pages/contract');
+router.get('/contact', function(req, res){
+ res.render('pages/contact');
 });
-router.post('/contract', function(req, res) {
+router.post('/contact', function(req, res) {
 
 });
