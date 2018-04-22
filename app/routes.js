@@ -1,14 +1,16 @@
 var express = require('express');
+var path = require('path');
+
 var router = express.Router();
 
 module.exports = router;
 
 router.get('/', function(req, res) {
-  res.send('HELLO WORLD');
-})
+  res.sendFile(path.join(__dirname, '../index.html'));
+});
 
 router.get('/about', function(req, res) {
-  res.send('hello world i im the about page!');
+ res.sendFile(path.join(__dirname, '../about.html'));
 })
 
 router.get('/contact');
